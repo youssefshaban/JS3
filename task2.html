@@ -1,0 +1,33 @@
+<html>
+    <head>
+<style type="text/css">
+	
+	body{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#fff;
+  }
+  div{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    border:2px solid black;
+  }
+</style>
+    </head>
+  <body>
+    <div id="circle"></div>
+        <script type="text/javascript">
+    	
+    	let circle = document.getElementById('circle');
+const onMouseMove = (e) =>{
+  circle.style.left = e.pageX + 'px';
+  circle.style.top = e.pageY + 'px';
+}
+document.addEventListener('mousemove', onMouseMove);
+    </script>
+  </body>
+</html>

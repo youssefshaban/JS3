@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body onload="myFunction2()">
+<input type="text" id="userName" value="" >
+<input type="text" id="password" value="" onchange="myFunction()">
+
+<button id="login"onclick="myFunction3()">login</button>
+
+
+<!-- <button onclick="myFunction()">Try it</button> -->
+
+<script>
+function myFunction() {
+   var x = document.getElementById("password").value;
+   if(x.length>=8){
+   	 document.getElementById("login").disabled = false;
+   }else{
+   	document.getElementById("login").disabled = true;
+   }
+
+}
+
+
+function myFunction2() {
+  document.getElementById("login").disabled = true;
+}
+
+function myFunction3() {
+	let x = document.getElementById("userName").value
+    alert("welcome "+x);
+}
+</script>
+
+</body>
+</html>
+
